@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.service_menu{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+    display: grid;
+    place-items: center;
+}
+.container{
+	width: 900px;
+	height: 300px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+
+}
+.container .service{
+	padding: 10px 30px;
+	position: relative;
+	box-shadow: 5px 5px 25px rgba(51, 51, 51, 0.192);
+}
+.container .service::after{
+	content: "";
+	position: absolute;
+	width: 7px;
+	height: 100%;
+	background-color: #333;
+	top: 0;
+	left: 0;
+	transition: all .8s ease;
+}
+.service .wrapper{
+	width: 100%;
+	height:100%;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+	transition: all .8s ease;
+}
+.service .wrapper .icon{
+	font-size: 28px;
+	margin-right: 27px;
+
+}
+.service .wrapper .text h4{
+	font-size: 18px;
+	font-weight: 600
+}
+.service .wrapper .text p{
+	font-size: 14px;
+	font-weight: 500
+	color: #444;
+	transition: all .8s ease
+}
+.service:hover::after{
+	width: 100%;
+}
+.service:hover .wraper{
+	color: #fff;
+}
+.service:hover .wraper p{
+	color: #fff;
+}
+
+.service_1 .wraper{
+	color: #9773fb;
+}
+.container .service_1::after{
+	background-color: #9773fb;
+}
+
+.service_2 .wraper{
+	color: #f32424;
+}
+.container .service_2::after{
+	background-color: #f32424;
+}
+
+.service_3 .wraper{
+	color: #1fac81;
+}
+.container .service_3::after{
+	background-color: #1fac81;
+}
