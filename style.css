@@ -19,7 +19,7 @@ footer{
 	left: 0;
 	right: 0;
 	background: #111;
-	height: 350px;
+	height: 200px;
 	width: 100vw;
 	font-family: 'Open Sans';
 	padding-top: 40px;
@@ -32,6 +32,7 @@ footer{
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
+	height: 130px;
 
 }
 .footer-content h3{
