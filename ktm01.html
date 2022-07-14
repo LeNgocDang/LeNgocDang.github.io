@@ -1,0 +1,148 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 1;
+                padding: 1;
+            }
+            section {
+                display: flex;
+                justify-content: center;
+                height: 50%;
+            }
+            .container {
+                display: flex;
+                width: 100rem;
+                height: 50rem;
+                margin: auto;
+                background: #42b0f5;
+            }
+            .input-data {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 5em;
+            }
+            input[type="submit"],
+            input[type="reset"] {
+                width: 10rem;
+                padding: .9em 0;
+            }
+            form > *,
+            content > * {
+                padding-bottom: 1em;
+            }
+            .flex {
+                display: flex;
+            }
+            .gender > * {
+                padding-left: 2em;
+            }
+            .hobby {
+                flex-direction: column;
+            }
+            .hobby > * {
+                padding-left: 2em;
+                padding-bottom: .5em;
+            }
+            .button {
+                padding: 0;
+            }
+            .output-data {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                background: #f56042;
+            }
+            .content > * {
+                padding-left: 2em;
+                padding-bottom: 1em;
+            }
+            @media (max-width: 60rem) {
+                .container {
+                    flex-direction: column;
+                }
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 15rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <div class="input-data">
+                    <form id="user-detail">
+
+                        <div class="so a">
+                            <label for="name">Số Thứ 1</label>
+                            <input type="number" id="number">
+                        </div>
+                        <div class="so b">
+                            <label for="name">Số Thứ 2</label>
+                            <input type="number" id="numbers">
+                        </div>
+
+                        <label for="gender"></label>
+                        <div class="flex gender">
+                            <div class="cong">
+                                <input type="radio" name="gender" value="Cộng" id="user-gender">
+                                <label for="male">+</label>
+                            </div>
+                            <div class="tru">
+                                <input type="radio" name="gender" value="Trừ" id="user-gender">
+                                <label for="female"><table>-</table></label>
+                            </div>
+                            <div class="nhan">
+                                <input type="radio" name="gender" value="Nhân" id="user-gender">
+                                <label for="male">*</label>
+                            </div>
+                            <div class="chia">
+                                <input type="radio" name="gender" value="Chia" id="user-gender">
+                                <label for="male">/</label>
+                            </div>
+                        </div>
+
+                        
+                        <div class="button">
+                            <input type="submit" value="Kết Quả" id="result">
+                            <input type="reset" value="Hủy">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="output-data">
+                    <div class="content">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </section>        
+    </body>
+    <script>
+        function calc()
+            {
+                var a = parseFloat(document.getElementById('number').value);
+                var b = parseFloat(document.getElementById('numbers').value);
+                document.getElementById('result').innerHTML=a+b;
+            }
+            function calc()
+            {
+                var a = parseFloat(document.getElementById('number').value);
+                var b = parseFloat(document.getElementById('numbers').value);
+                document.getElementById('result').innerHTML=a-b;
+                
+                
+
+
+    </script>
+</html>
